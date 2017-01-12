@@ -1,0 +1,109 @@
+/*! CSS reset from benfrain/app-reset */
+*,:after,:before{box-sizing:inherit}html{box-sizing:border-box}
+*{user-select:none;-webkit-tap-highlight-color:rgba(255,255,255,0);-webkit-tap-highlight-color:transparent}
+[contenteditable],input[type]{user-select:text}body,h1,h2,h3,h4,h5,h6,p{margin:0;font-size:1rem;font-weight:400}
+a{text-decoration:none;color:inherit}b{font-weight:400}em,i{font-style:normal}a:focus,input:focus{outline:0}
+fieldset,input{appearance:none;border:0;padding:0;margin:0;min-width:0;font-size:1rem;font-family:inherit}
+input::-ms-clear{display:none}input[type=number]{-moz-appearance:textfield}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{appearance:none}
+svg{display:inline-flex}img{max-width:100%;display:block}
+
+html {
+  color: #030303;
+  font: caption;
+  padding-bottom: 2em;
+}
+
+a {
+  color: #1f4ba0;
+  text-decoration: underline;
+}
+
+header {
+  padding: 2em;
+}
+
+header .logo {
+  display: inline-block;
+  margin: 10 auto;
+  max-width: 40px;
+}
+
+header p {
+  font-size: 30px;
+  color: #093145;
+}
+
+
+.home .courses-selector {
+  font-size: 3em;
+}
+
+.home .courses-selector .course-title {
+  font-size: 20px;
+  padding: 5px 0px 5px 50px;
+}
+
+.home .listing {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 5px 0px 5px 25px;
+  color: #DA621E;
+
+}
+
+.course-full .course-details div{
+  font-size: 15px;
+  padding: 2px 0px 2px 25px;
+  color: #3C6478;
+}
+.course-full .course-enroll-status {
+  color: #DA621E;
+  font-size: 20px;
+  padding: 4px 0px 4px 25px;
+}
+
+.course-full button {
+  margin: 10px;
+}
+
+.course-full .add {
+  background-color: #1abc9c;
+  max-width: 120px;
+}
+
+.course-full .remove {
+  background-color: #e74c3c;
+  max-width: 120px;
+}
+
+.course-full .enrolled-total{
+  color: #093145;
+  font-size: 20px;
+  padding: 4px 0px 4px 25px;
+}
+
+.not-found {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 2em;
+  text-align: center;
+  width: 100%;
+}
+
+.not-found h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.navigateBack {
+  font-size: 1.6em;
+  padding: 2em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.not-found h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
