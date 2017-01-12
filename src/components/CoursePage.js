@@ -14,6 +14,7 @@ export default class CoursePage extends React.Component {
     const maxEnroll = `You are currently enrolled in a maximum of 5 courses, and are not allowed to add any more courses`
     const status = cache.get(id) ? addStatus : removeStatus;
     const courseName = `${course.subject}${course.id}`;
+    const courseEnrollment = cache.get(courseName);
 
     this.state = {
       id: id,
@@ -23,7 +24,7 @@ export default class CoursePage extends React.Component {
       add_status: addStatus,
       remove_status: removeStatus,
       max_enroll: maxEnroll,
-      course_enrollment: course.enrollment,
+      course_enrollment: courseEnrollment,
     }
   }
 

@@ -13,8 +13,12 @@ export default class CourseTotal extends React.Component {
     }
 
     props.courses.forEach(course => {
-      cache.put(`${course.subject}${course.id}`, `${course.enrollment}`);
+      const courseName = `${course.subject}${course.id}`;
+      const courseEnrollment = cache.get(courseName) || 0;
+      cache.put(courseName, courseEnrollment);
     })
+
+
   }
 
   addToTotal(){
