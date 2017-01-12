@@ -29,7 +29,6 @@ export default class CourseTotal extends React.Component {
     });
 
     cache.put('total', total);
-    console.log(total);
   }
   subtractFromTotal(){
     let total = this.state.enrolledTotal 
@@ -44,8 +43,6 @@ export default class CourseTotal extends React.Component {
     });
 
     cache.put('total', total);
-    console.log(total);
-
   }
 
   render () {

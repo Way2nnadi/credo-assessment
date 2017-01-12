@@ -6,7 +6,6 @@ import NotFoundPage from './components/NotFoundPage';
 
 export default function universalRoutes(server) {
   server.get('*', (req, res) => {
-    // console.log("REQUEST>>>", appRoutes)
     match(
       { appRoutes, location: req.url },
       (err, redirectLocation, renderProps) => {
